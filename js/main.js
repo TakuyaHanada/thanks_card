@@ -176,3 +176,11 @@ $(window).resize(function(){
     stageWidth = window.innerWidth ? window.innerWidth : $(window).width();
     stageHeight = window.innerHeight ? window.innerHeight : $(window).height();
 });
+
+
+$(function(){
+    setTimeout(function(){
+        $("#title").fadeOut();
+        $("#main").fadeIn();
+    });
+});
