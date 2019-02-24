@@ -179,8 +179,10 @@ $(window).resize(function(){
 
 
 $(function(){
+    $("#first-screen").fadeIn(500);
     setTimeout(function(){
-        $("#title").fadeOut();
-        $("#main").fadeIn();
-    });
+        $("#first-screen").fadeOut(500, function(){
+            $("#main").fadeIn();
+        });
+    }, 1500);
 });

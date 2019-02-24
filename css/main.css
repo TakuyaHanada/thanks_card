@@ -17,3 +17,15 @@ body {
 #main {
     display: none;
 }
+
+#first-screen {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: auto;
+    height: 64px;
+    text-align: center;
+}
