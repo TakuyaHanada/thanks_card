@@ -1,6 +1,4 @@
-// forked from teetteet's "forked: [canvas] 紙ふぶき" http://jsdo.it/teetteet/r8As
-// forked from ikr7's "forked: [canvas] 紙ふぶき" http://jsdo.it/ikr7/nutG
-// forked from tsubao's "[canvas] 紙ふぶき" http://jsdo.it/tsubao/iR2g
+// 紙吹雪 canvas
 var DEF_KAMIKIRE_MAX = 300;
 	
 var kamikire_array = [];
@@ -8,12 +6,6 @@ var cvs;
 var ctx;
 var stageWidth, stageHeight;
 var resizeFlg = true;
-//
-window.onload = function()
-{
-    init();
-}
-
 
 //初期処理
 function init()
@@ -178,7 +170,11 @@ $(window).resize(function(){
 });
 
 
+
+// メイン
 $(function(){
+    init();
+
     $("#first-screen").fadeIn(500);
     setTimeout(function(){
         $("#first-screen").fadeOut(500, function(){
