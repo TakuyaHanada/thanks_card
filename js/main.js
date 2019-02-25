@@ -175,7 +175,7 @@ $(window).resize(function(){
 $(function(){
     init();
 
-    $("#first-screen").fadeIn(500);
+    $("#first-screen").fadeIn(1000);
     setTimeout(function(){
         $("#first-screen").fadeOut(500, function(){
             $("#main").fadeIn();
