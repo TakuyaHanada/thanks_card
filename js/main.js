@@ -173,12 +173,14 @@ $(window).resize(function(){
 
 // メイン
 $(function(){
-    init();
-
     $("#first-screen").fadeIn(1000);
     setTimeout(function(){
         $("#first-screen").fadeOut(500, function(){
             $("#main").fadeIn();
         });
     }, 1500);
+});
+
+$(function(){
+    init();
 });
